@@ -1,22 +1,22 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import './App.css'
 import Home from './Pages/Home';
-import Cart from './Pages/Cart';
+import Like from './Pages/Liked';
 import Header from './Components/Header';
 
 
 function App() {
 
+    const [like, setLike] = useState([])
   return (
     <Router>
-      <Header />
+      <Header like={like} />
       <Routes>
-          <Route exact path='/' element={<Home/>} />
-          <Route path='/cart' element={<Cart/>} />
+          <Route exact path='/' element={<Home like={like} setLike={setLike} />} />
+          <Route path='/like' element={<Like like={like} setLike={setLike} />} />
         </Routes>
       </Router>
-
   );
 }
 

@@ -1,0 +1,99 @@
+.divCards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0px 0px 0px 0px;
+    justify-content: space-between;
+}
+
+.themaincontainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    padding: 30px 0px 30px 0px
+}
+
+.btn {
+    margin: 30px 0 0 0;
+    width: 180px;
+    height: 37px;
+    border-radius: 6px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    background-color: #ffffff;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: rgb(31, 31, 31);
+    color: #ffffff;
+    transition: all 0.25s;
+    outline: none;
+    border: none;
+}
+
+.thecard {
+    display: flex;
+    flex-direction: row;
+    width: 320px;
+    height: 350px;
+    transform-style: preserve-3d;
+    transition: 0.3s ease;
+}
+
+.thecard:hover {
+    transform: rotateY(180deg);
+}
+
+.theFront {
+    position: absolute;
+    width: 320px;
+    height: 350px;
+    backface-visibility: hidden;
+    color: #333;
+}
+
+.theFront>img {
+    width: 320px;
+    height: 350px;
+    border-radius: 10px;
+    border: none;
+
+}
+
+.theBack {
+    position: absolute;
+    width: 320px;
+    height: 350px;
+    backface-visibility: hidden;
+    /* Created with https://www.css-gradient.com */
+    background: rgba(53, 68, 62, 1.0);
+    background: linear-gradient(to top left, rgba(53, 68, 62, 1.0), rgba(1, 1, 1, 1.0));
+    color: #333;
+    border-radius: 10px;
+    transform: rotateY(180deg);
+    border: none;
+}
+
+.text {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 2;
+    color: #e4e4e4;
+    margin: 60px 10px 0px 10px;
+    padding: 10px 0 0 0;
+    font-size: 22px;
+    font-family: 'Poppins',
+        sans-serif;
+    line-height: 2.5;
+
+}

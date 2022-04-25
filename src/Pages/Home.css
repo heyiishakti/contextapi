@@ -1,0 +1,13 @@
+.Home{
+    background-color: rgb(0, 0, 0);
+}
+
+.divCards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0px 0px 0px 0px;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+}
+

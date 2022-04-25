@@ -1,15 +1,16 @@
 import { Link } from "react-router-dom";
 import "./Style.css";
 
-const Header = () => {
+const Header = ({ like}) => {
+
   return (
       <> 
          <div className="nav">
-          <Link to="/">
-            Home Page         
+        <Link to="/" className="link" >
+            Home      
           </Link>
-          <Link to="/cart">            
-           Cart                       
+          <Link to="/like" className="link" >            
+            Liked({like.length})                  
           </Link>
         </div>
     </>
